@@ -24,7 +24,7 @@ url = "https://api-inference.huggingface.co/models/google/gemma-3-27b-it"
 headers = {"Authorization": f"Bearer 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"}
 
 # PostgreSQL Database Configuration
-DATABASE_URL = "postgresql+asyncpg://postgres:Hi%40191003@localhost:5432/postgres"
+DATABASE_URL = postgresql+asyncpg://<username>:<password>@localhost:5432/<database_name>
 
 async_engine = create_async_engine(DATABASE_URL, echo=True, future=True)
 AsyncSessionLocal = async_sessionmaker(bind=async_engine, expire_on_commit=False, class_=AsyncSession)
