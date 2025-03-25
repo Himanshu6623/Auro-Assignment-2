@@ -99,6 +99,4 @@ The app logs important events using Python’s logging module. Logs include:
 - Invalid file formats return a `400 Bad Request`.  
 - Empty files or text return a `400 Bad Request`.  
 - Internal processing errors return a `500 Internal Server Error`.  
-
-## License  
-MIT License  
+ 
