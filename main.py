@@ -18,10 +18,11 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 device = torch.device('cpu')
+#DeepSeek API
 url = "https://api-inference.huggingface.co/models/google/gemma-3-27b-it"
 
 #Hugging face Token(Create Yours and use it here)Limited usage
-headers = {"Authorization": f"Bearer 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"}
+headers = {"Authorization": f"Bearer {Hugging_face_token}"}
 
 # PostgreSQL Database Configuration
 DATABASE_URL = postgresql+asyncpg://<username>:<password>@localhost:5432/<database_name>
