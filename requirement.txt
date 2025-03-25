@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+asyncpg
+sqlalchemy
+alembic
+numpy
+torch
+sentence-transformers
+fastapi[standard]
+psycopg2
