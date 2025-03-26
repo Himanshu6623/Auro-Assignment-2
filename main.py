@@ -21,8 +21,8 @@ device = torch.device('cpu')
 #DeepSeek API
 url = "https://api-inference.huggingface.co/models/google/gemma-3-27b-it"
 
-#Hugging face Token(Create Yours and use it here)Limited usage
-headers = {"Authorization": f"Bearer {Hugging_face_token}"}
+#Hugging face Token(Create Yours and use it here)
+headers = {"Authorization": f"Bearer {Hugging_face_token}"}#Token = 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 (can use this token for few uses until it reaches it limit)
 
 # PostgreSQL Database Configuration
 DATABASE_URL = postgresql+asyncpg://<username>:<password>@localhost:5432/<database_name>
